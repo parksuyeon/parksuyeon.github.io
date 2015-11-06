@@ -10,11 +10,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+body {
+    margin: 0;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -38,13 +37,44 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+#tabula {
+    top: 2%;
+    right: 2%;
+    position: fixed;
+    /*
+    -webkit-filter: invert(100%);*/
+}
+
+#rasa {
+    bottom: 2%;
+    left: 2%;
+    position: fixed;
+}
+
+.container {
+    margin: 3% auto;
+    max-width: 1024px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.content .item {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    padding: 0.7%;
+    margin-bottom: 7%;
+}
+
+.content .item img {
+    width: 100%;
 }
 
 /*
@@ -94,13 +124,52 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
 
+.header {
+    margin: 100px 0;
+    text-align: center;
+}
 
+.title {
+    font-size: 49px;
+    font-weight: 700;
+}
 
+.subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
 
+.item .item-header .item-time {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
 
+.item .item-header .item-title {
+    font-size: 15px;
+    margin-bottom: 0.5%;
+    text-align: center;
+}
 
+.item .item-content {
+    text-align: center;
+}
 
+.item .item-content .image-desc {
+    margin-top: 0.3%;
+    text-align: center;
+}
 
 
 
