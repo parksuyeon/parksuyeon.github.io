@@ -37,46 +37,6 @@ body {
  * A better looking default horizontal rule
  */
 
-#tabula {
-    top: 2%;
-    right: 2%;
-    position: fixed;
-    /*
-    -webkit-filter: invert(100%);*/
-}
-
-#rasa {
-    bottom: 2%;
-    left: 2%;
-    position: fixed;
-}
-
-.container {
-    margin: 3% auto;
-    max-width: 1024px;
-    text-align: center;
-}
-
-.content {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-}
-
-.content .item {
-    display: flex;
-    display: -webkit-flex;
-    align-items: flex-end;
-    -webkit-align-items: flex-end;
-    padding: 0.7%;
-    margin-bottom: 7%;
-}
-
-.content .item img {
-    width: 100%;
-}
-
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
